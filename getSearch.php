@@ -23,8 +23,3 @@ $charset = 'utf8mb4';
     
 ?>
 
-<div class="Container">
-      <div class="PageContent">
-        <p class="footer">Copyright &copy; 2022 Ems Dealership</p>
-      </div>
-    </div>

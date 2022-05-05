@@ -34,7 +34,7 @@
 $carIndex =$_GET['carIndex'];
 
 require 'databaseTemplate.php';
-echo "test = ".$carIndex;
+
     $stmt = $pdo->prepare('SELECT * FROM cars WHERE carIndex = :carIndex ');
     $stmt->execute([$carIndex]);
 
@@ -83,7 +83,7 @@ echo "test = ".$carIndex;
          <input type='text' name='cAddress'>
          <input type='hidden' name='carIndex' value='".$carIndex."' >
          <input type='submit' value='Buy Now'>
-         test = ".$carIndex."
+         
          </form>";
     }
 
