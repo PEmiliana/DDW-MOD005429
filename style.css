@@ -1,0 +1,250 @@
+    
+
+
+  /* asta e codul pentru bara de navigare */
+  * {box-sizing: border-box;}
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+.NavContainer {
+    background-color: #3a499e;
+    min-height:40px;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+}
+
+.Nav {
+    display: block;
+   
+}
+.content {
+    padding: 16px;
+  }
+  
+
+  
+.NavContainer a.active {
+    background-color: #ffffff;
+    color: #111635
+  }
+  
+ 
+.NavContainer .Nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.NavContainer .Nav a {
+    display: block;
+    color: #3a499e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.NavContainer .Nav a:hover {
+    background-color: #ffffff;
+    color: #111635
+}
+
+.NavContainer .Nav .MenuOpen a {
+    text-align: left;
+}
+
+@media (max-width: 767px) {    
+    .Nav .DropdownContent {
+      display: none;
+      position: absolute;
+      background-color: #3a499e;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    .Nav:hover .DropdownContent {
+      display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    li {
+        float: left;
+    }
+    .MenuOpen {
+        display: none;
+    }
+}
+
+.MenuOpen:hover ul li {
+    display: block;
+}
+
+.MenuOpen span {
+    color: #3d2836;
+    font-weight: bold;
+}
+
+
+
+  div.Container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3a499e;
+}
+
+div.Container.Red {
+    background-color: #ffffff;
+    color: #3a499e;
+}
+
+div.Container.Red p {
+    color: #3a499e; 
+}
+
+div.Container.Red h1,
+div.Container.Red h2 {
+    color: #3a499e;
+}
+
+  .content {
+    padding: 16px;
+  }
+  
+
+
+
+  .Grid {
+    display: grid;
+    grid-gap: 50px;
+}
+
+.Grid .GridItem {
+    background-color:transparent;
+    color: transparent;
+    text-align: center;
+}
+
+.Grid .GridItem h1,
+.Grid .GridItem h2 {
+    color: #3a499e;
+}
+
+.Grid .GridItem img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {   
+    .Grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Grid .GridItem {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {   
+    .Grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Grid .GridItem {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) {   
+    .Grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Grid .GridItem {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {   
+    .Grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Grid .GridItem {
+        padding: 50px;
+    }
+}
+.PageContent h1 {
+    color: #3a499e;
+    font-size: 2em;
+}
+p.footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* stilul pentru pagina de login*/
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}button:hover {
+opacity: 0.8;
+}.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+.container {
+padding: 16px;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+}/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
+}
+
+
+
+/*style for insert customer.php*/
+
+.TextCentral {
+    text-align: center;
+    color: #3a499e;
+    font-size: 2em;
+width: auto;
+}
