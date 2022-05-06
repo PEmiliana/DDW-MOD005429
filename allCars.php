@@ -1,24 +1,3 @@
-<table>
-<tr>
-<th>Make</th><th>Model</th><th>Reg</th><th>Colour</th><th>Photo</th>
-</tr>
-<?php
-
-require 'databaseTemplate.php';
-
-$stmt = $pdo->query('SELECT * FROM cars');
-
-while($row = $stmt->fetch())
-{
-    echo "<tr>";
-    echo "<td>" . $row['make']."</td><td>". $row['model']. 
-    "</td><td>". $row['Reg']. "</td><td>". $row['colour'] ."</td><td><img src='pictures/" . $row['picture'] ."</td>";
-    echo "</tr>";
-}
-
-
-?>
-</table>
 
 <!DOCTYPE html>
 
@@ -47,6 +26,30 @@ while($row = $stmt->fetch())
             </div>
         </div>
     </div>
+    
+    <table>
+<tr>
+<th>Make</th><th>Model</th><th>Reg</th><th>Colour</th><th>Photo</th>
+</tr>
+<?php
+
+require 'databaseTemplate.php';
+
+$stmt = $pdo->query('SELECT * FROM cars');
+
+while($row = $stmt->fetch())
+{
+    echo "<tr>";
+    echo "<td>" . $row['make']."</td><td>". $row['model']. 
+    "</td><td>". $row['Reg']. "</td><td>". $row['colour'] ."</td><td><img src='pictures/" . $row['picture'] ."</td>";
+    echo "</tr>";
+}
+
+
+?>
+</table>
+
+
      
 
   <div class="Container">
